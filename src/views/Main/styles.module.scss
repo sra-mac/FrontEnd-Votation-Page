@@ -1,0 +1,59 @@
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100vw;
+  min-height: 100vh;
+
+  color: #fff;
+
+  background-image: url(../../assets/Background.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.container{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  //filho imediado dentro desse container
+  >h1{
+    margin: 40px 0;
+    font-family: "Heebo";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 100%;
+
+    text-align: center;
+    letter-spacing: -1px;
+  }
+
+  button, >span{
+    margin-top: 40px;
+    width: 752px;
+  }
+}
+
+.container__participants{
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+
+  >div {
+    position: relative;
+
+    span{
+      display: flex;
+      align-items: center;
+      gap: 4px;
+
+      position: absolute;
+      top: -45px;
+      z-index: 1;
+    }
+  }
+}
